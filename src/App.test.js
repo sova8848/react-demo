@@ -11,7 +11,7 @@ test('renders learn react link', () => {
 
 test('renders edit code message', () => {
   const { getByText } = render(<App />);
-  const messageElement = getByText(/Edit <code>src\/App\.js<\/code> and save to reload\./i);
+  const messageElement = getByText(/Edit src\/App\.js and save to reload\./i);
   expect(messageElement).toBeInTheDocument();
 });
 
